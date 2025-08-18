@@ -5,6 +5,8 @@ import Gio from 'gi://Gio';
 export default class DisableLockExtension {
     constructor() {
         this._indicator = null;
+
+        this._toggle.destroy();
         this._toggle = null;
 
         // Settings objects
@@ -51,6 +53,8 @@ export default class DisableLockExtension {
             this._indicator.destroy();
             this._indicator = null;
         }
+
+        this._toggle.destroy();
         this._toggle = null;
 
         // Restore defaults
