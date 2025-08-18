@@ -1,0 +1,8 @@
+{
+  "uuid": "dontlock@ibahnasy.github.com",
+  "name": "DontLock",
+  "description": "Adds a toggle in the system menu to enable or disable screen lock",
+  "shell-version": ["48"],
+  "url": "https://github.com/ibahnasy/",
+  "version": 1
+}
