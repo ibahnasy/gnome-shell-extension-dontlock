@@ -3,6 +3,6 @@
   "name": "DontLock",
   "description": "Adds a toggle in the system menu to enable or disable screen lock",
   "shell-version": ["48"],
-  "url": "https://github.com/ibahnasy/",
-  "version": 1
+  "url": "https://github.com/ibahnasy/-gnome-shell-extension-dontlock",
+  "version": "1.0.0"
 }
