@@ -5,8 +5,6 @@ import Gio from 'gi://Gio';
 export default class DisableLockExtension {
     constructor() {
         this._indicator = null;
-
-        this._toggle.destroy();
         this._toggle = null;
 
         // Settings objects
@@ -60,5 +58,8 @@ export default class DisableLockExtension {
         // Restore defaults
         this._lockSettings.set_boolean('lock-enabled', true);
         this._sessionSettings.set_uint('idle-delay', this._originalIdleDelay);
+
+        this._lockSettings = null;
+        this._sessionSettings = null;
     }
 }
