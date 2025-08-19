@@ -12,8 +12,8 @@ export default class DisableLockExtension {
         this._indicator = new QuickSettings.SystemIndicator();
 
         // Settings objects
-        this._lockSettings = new Gio.Settings({ schema: 'org.gnome.desktop.screensaver' });
-        this._sessionSettings = new Gio.Settings({ schema: 'org.gnome.desktop.session' });
+        this._lockSettings = new Gio.Settings({ schema_id: 'org.gnome.desktop.screensaver' });
+        this._sessionSettings = new Gio.Settings({ schema_id: 'org.gnome.desktop.session' });
 
         // Save user’s idle-delay so we can restore it later
         this._originalIdleDelay = this._sessionSettings.get_uint('idle-delay');
